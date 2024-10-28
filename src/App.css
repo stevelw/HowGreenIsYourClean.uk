@@ -27,6 +27,11 @@ form {
     border: solid red;
 }
 
+#day-view table td {
+    width: 50%;
+    text-align: center;
+}
+
 #graph-view {
     grid-column: 2;
     grid-row-start: 1;
