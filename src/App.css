@@ -11,20 +11,25 @@
 header {
     grid-row: 1;
     grid-column: 1;
-    border: solid red;
 }
 
 form {
     grid-row: 2;
     grid-column: 1;
-    border: solid red;
+}
+
+form * {
+    font-size: 1.5rem;
+}
+
+form input {
+    width: 30%;
 }
 
 #day-view {
     grid-column: 1;
     grid-row-start: 3;
     grid-row-end: 5;
-    border: solid red;
 }
 
 #day-view table td {
@@ -36,11 +41,10 @@ form {
     grid-column: 2;
     grid-row-start: 1;
     grid-row-end: 4;
-    border: solid red;
+    border: soid red;
 }
 
 #explanation {
     grid-column: 2;
     grid-row: 4;
-    border: solid red;
 }
