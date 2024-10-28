@@ -45,3 +45,7 @@ Using the [Carbon Intensity API](https://api.carbonintensity.org.uk) to help con
         - DayView
         - GraphView
     - Explanation
+
+## Visualisation
+
+Using [react-chartjs-2](https://react-chartjs-2-two.vercel.app)
