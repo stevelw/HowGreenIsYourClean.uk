@@ -11,7 +11,7 @@ export function fetchNextFourHours(postcodeArea) {
             const max = Math.max(...data.map(datapoint => datapoint.intensity.forecast))
             const min = Math.min(...data.map(datapoint => datapoint.intensity.forecast))
             const average = data.reduce((acc, { intensity: { forecast } }) => {
-                return acc + (forecast / data.length)
+                return Math.round(acc + (forecast / data.length))
             }, 0)
             return {
                 max,
