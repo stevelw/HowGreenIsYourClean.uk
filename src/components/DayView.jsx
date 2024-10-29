@@ -1,4 +1,17 @@
-function DayView({ dayData }) {
+import { useEffect, useState } from "react"
+import { fetchNextFourHours } from "../utils/api"
+
+function DayView({ postcodeArea }) {
+    const [dayData, setDayData] = useState({})
+
+    useEffect(() => {
+        if (!postcodeArea) {
+            setDayData([])
+        } else {
+            fetchNextFourHours(postcodeArea)
+                .then(data => setDayData(data))
+        }
+    }, [postcodeArea])
 
     return (
         <div id="day-view">

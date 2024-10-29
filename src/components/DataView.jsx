@@ -6,8 +6,7 @@ import { fetchNextFortyEightHours, fetchNextFourHours } from "../utils/api"
 
 function DataView() {
 
-    const [postcode, setPostcode] = useState('')
-    const [dayData, setDayData] = useState({})
+    const [postcodeArea, setPostcodeArea] = useState('')
     const [graphData, setGraphData] = useState([])
 
     useEffect(() => {
@@ -17,8 +16,8 @@ function DataView() {
 
     return (
         <>
-            <PostcodeSearch postcode={postcode} setPostcode={setPostcode} />
-            <DayView dayData={dayData} />
+            <PostcodeSearch postcodeArea={postcodeArea} setPostcodeArea={setPostcodeArea} />
+            <DayView postcodeArea={postcodeArea} />
             <GraphView graphData={graphData} />
         </>
     )
