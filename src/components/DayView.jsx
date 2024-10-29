@@ -3,13 +3,16 @@ import { fetchNextFourHours } from "../utils/api"
 
 function DayView({ postcodeArea }) {
     const [dayData, setDayData] = useState({})
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         if (!postcodeArea) {
-            setDayData([])
+            setDayData({})
         } else {
+            setIsLoading(true)
             fetchNextFourHours(postcodeArea)
                 .then(data => setDayData(data))
+                .then(() => setIsLoading(false))
         }
     }, [postcodeArea])
 
@@ -26,11 +29,11 @@ function DayView({ postcodeArea }) {
                 <tbody>
                     <tr>
                         <td>Average</td>
-                        <td>{dayData.average}</td>
+                        <td>{(isLoading) ? 'Loading...' : dayData.average}</td>
                     </tr>
                     <tr>
-                        <td>Min – Max</td>
-                        <td>{dayData.min} - {dayData.max}</td>
+                        <td>Min &ndash; Max</td>
+                        <td>{(isLoading || !Object.keys(dayData).length) ? '' : `${dayData.min} - ${dayData.max}`}</td>
                     </tr>
                 </tbody>
             </table>
