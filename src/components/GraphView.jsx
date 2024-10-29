@@ -18,6 +18,7 @@ function GraphView({ postcodeArea }) {
     }
 
     const [chartData, setChartData] = useState(blankChartData)
+    const [isLoading, setIsLoading] = useState(false)
 
     ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Filler, Legend)
 
@@ -25,6 +26,7 @@ function GraphView({ postcodeArea }) {
         if (!postcodeArea) {
             setChartData(blankChartData)
         } else {
+            setIsLoading(true)
             fetchNextFortyEightHours(postcodeArea)
                 .then(data => {
                     setChartData({
@@ -42,14 +44,20 @@ function GraphView({ postcodeArea }) {
                         ]
                     })
                 })
+                .then(() => {
+                    setIsLoading(false)
+                })
         }
     }, [postcodeArea])
 
 
-    return (
+    return ( // TODO: add loading
         <div id="graph-view">
             <h2>The next 48 hours</h2>
-            <Line options={options} data={chartData} />
+            {(isLoading)
+                ? <p>Loading...</p>
+                : <Line options={options} data={chartData} />
+            }
         </div>
     )
 }
