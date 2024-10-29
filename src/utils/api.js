@@ -7,6 +7,7 @@ const api = axios.create({
 export function fetchNextFourHours(postcodeArea) {
     return fetchNextForPostcodeArea(24, postcodeArea)
         .then(data => {
+            if (!data.length) return {}
             data.length = 8
             const max = Math.max(...data.map(datapoint => datapoint.intensity.forecast))
             const min = Math.min(...data.map(datapoint => datapoint.intensity.forecast))
