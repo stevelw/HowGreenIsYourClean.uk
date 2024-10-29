@@ -18,6 +18,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    text-align: center;
+}
+
 header {
     grid-row: 1;
     grid-column: 1;
