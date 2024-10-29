@@ -1,20 +1,9 @@
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Filler, Legend } from 'chart.js'
 import { useEffect, useState } from 'react'
 import { Line } from 'react-chartjs-2'
+import { fetchNextFortyEightHours } from '../utils/api'
 
-function GraphView({ graphData }) {
-    const [chartJsData, setChartJsData] = useState({
-        labels: [],
-        datasets: [
-            {
-                fill: true,
-                label: 'Forecast',
-                data: [],
-                backgroundColor: 'rgba(53, 162, 235, 0.5)',
-                pointRadius: 0,
-            },
-        ],
-    })
+function GraphView({ postcodeArea }) {
     const options = {
         responsive: true,
         plugins: {
@@ -23,29 +12,44 @@ function GraphView({ graphData }) {
             }
         }
     }
+    const blankChartData = {
+        labels: [],
+        datasets: [],
+    }
+
+    const [chartData, setChartData] = useState(blankChartData)
 
     ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Filler, Legend)
 
     useEffect(() => {
-        setChartJsData({
-            labels: graphData.map(datapoint => new Date(datapoint.from).getHours().toString() + ':00'),
-            datasets: [
-                {
-                    fill: true,
-                    label: 'Forecast',
-                    data: graphData.map(datapoint => datapoint.intensity.forecast),
-                    backgroundColor: 'rgba(53, 162, 235, 0.5)',
-                    pointRadius: 0,
-                },
-            ],
-        })
-    }, [graphData])
+        if (!postcodeArea) {
+            setChartData(blankChartData)
+        } else {
+            fetchNextFortyEightHours(postcodeArea)
+                .then(data => {
+                    setChartData({
+                        labels: data.map(datapoint => {
+                            return new Date(datapoint.timestamp).getHours().toString() + ':00'
+                        }),
+                        datasets: [
+                            {
+                                fill: true,
+                                label: 'Forecast',
+                                data: data.map(datapoint => datapoint.intensity),
+                                backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                                pointRadius: 0,
+                            }
+                        ]
+                    })
+                })
+        }
+    }, [postcodeArea])
 
 
     return (
         <div id="graph-view">
             <h2>The next 48 hours</h2>
-            <Line options={options} data={chartJsData} />
+            <Line options={options} data={chartData} />
         </div>
     )
 }
