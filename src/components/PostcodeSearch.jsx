@@ -8,10 +8,8 @@ function PostcodeSearch({ postcodeArea, setPostcodeArea }) {
         const regex = /^[a-z]{1,2}[0-9]{1,2}$/i
         if (input.match(regex)) {
             setPostcodeArea(input)
-            console.log('POSTCODE!')
         } else {
             setPostcodeArea('')
-            console.log('NO POSTCODE!')
         }
     }, [input])
 
