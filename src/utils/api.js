@@ -40,8 +40,12 @@ function fetchNextForPostcodeArea(hours, postcodeArea) {
     const currentDateTime = new Date().toISOString()
     const endpoint = `/regional/intensity/${currentDateTime}/fw${hours}h/postcode/${postcodeArea}`
     return api.get(endpoint)
-        .then(({ data: { data: { data: results } } }) => {
-            return results
+        .then(({ data }) => {
+            if (data) {
+                return data.data.data
+            } else {
+                return [] // Postcode doesn't exist
+            }
         })
         .catch(err => {
             console.log(err.message)
