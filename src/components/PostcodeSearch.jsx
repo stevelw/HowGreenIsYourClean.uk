@@ -15,7 +15,8 @@ function PostcodeSearch({ postcodeArea, setPostcodeArea }) {
 
     return (
         <form>
-            <label>Area postcode (e.g. 'RN14'): <input type="text" id="postcode" value={input} onChange={(event) => setInput(event.target.value)}></input></label>
+            <label for='postcode'>Area postcode (e.g. 'RN14'):</label>
+            <input type="text" id="postcode" value={input} onChange={(event) => setInput(event.target.value)}></input>
         </form>
     )
 }
