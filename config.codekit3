@@ -21,9 +21,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/.gitignore",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dist" : {
       "ft" : 65536,
@@ -46,9 +46,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/index.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/Insomnia.json" : {
       "ft" : 524288,
@@ -291,7 +291,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-tar",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 752011277.432971
+    "lastBuiltDate" : 752019402.25682294
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -585,14 +585,14 @@
     "bowerUseExactVersion" : 0,
     "browserRefreshDelay" : 0,
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
-    "buildEnvironment" : 1,
+    "buildEnvironment" : 0,
     "buildFolderActive" : 1,
     "buildFolderName" : "dist",
     "cleanBuild" : 1,
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
-      "NODE_ENV:::development"
+      "NODE_ENV:::production"
     ],
     "esLintConfigFileHandlingType" : 0,
     "esLintECMAVersion" : 7,
