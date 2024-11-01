@@ -1,6 +1,6 @@
 # How Green Is Your Clean?
 
-**A work in progress frontend for the Official Carbon Intensity API for Great Britain**
+**A work in progress frontend for the [Official Carbon Intensity API for Great Britain](https://carbonintensity.org.uk)**
 
 Hosted at [howgreenisyourclean.uk](https://howgreenisyourclean.uk).
 
