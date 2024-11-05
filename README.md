@@ -24,3 +24,6 @@ A built version is available at [howgreenisyourclean.uk](https://howgreenisyourc
 3. Build using Vite
 
     `npm run build`
+
+    Alternatively, a [CodeKit](https://codekitapp.com) build configuration is included.
+    
