@@ -8,11 +8,20 @@ function DataView() {
     const [postcodeArea, setPostcodeArea] = useState('')
 
     return (
-        <>
-            <PostcodeSearch postcodeArea={postcodeArea} setPostcodeArea={setPostcodeArea} />
-            <DayView postcodeArea={postcodeArea} />
-            <GraphView postcodeArea={postcodeArea} />
-        </>
+      <>
+      <div className="container">
+        <div style={{ flex: "auto" }}>
+          <PostcodeSearch
+            postcodeArea={postcodeArea}
+            setPostcodeArea={setPostcodeArea}
+          />
+        </div>
+        <div style={{ flex: "auto" }}>
+          <DayView postcodeArea={postcodeArea} />
+        </div>
+      </div>
+      <GraphView postcodeArea={postcodeArea} />
+    </>
     )
 }
 

@@ -72,8 +72,7 @@ function GraphView({ postcodeArea }) {
   }, [postcodeArea]);
 
   return (
-    // TODO: add loading
-    <div id="graph-view" style={{ gridArea: "two-days" }}>
+    <div id="graph-view">
       <h2>The next 48 hours</h2>
       {isLoading ? (
         <p>Loading...</p>

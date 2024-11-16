@@ -6,11 +6,11 @@ import Explanation from './components/Explanation'
 function App() {
 
   return (
-    <div className='container'>
+    <>
       <Heading />
       <DataView />
       <Explanation />
-    </div>
+    </>
   )
 }
 

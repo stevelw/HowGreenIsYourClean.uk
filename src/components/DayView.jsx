@@ -17,7 +17,7 @@ function DayView({ postcodeArea }) {
   }, [postcodeArea]);
 
   return (
-    <div id="day-view" style={{ gridArea: "four-hours" }}>
+    <div id="day-view">
       <h2>The next 4 hours</h2>
       <table>
         <thead>
