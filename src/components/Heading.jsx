@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 function Heading() {
   return (
-    <header style={{ gridArea: "header" }}>
+    <header>
       <img
         src={logo}
         alt="icon of a grren-energy styled washing machine"

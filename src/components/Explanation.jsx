@@ -1,6 +1,6 @@
 function Explanation() {
   return (
-    <div id="explanation" style={{ gridArea: "text" }}>
+    <div id="explanation">
       <h2>What is this?</h2>
       <p>
         This is the carbon intensity of the electricity generated for your

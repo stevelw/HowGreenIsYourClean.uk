@@ -14,7 +14,7 @@ function PostcodeSearch({ postcodeArea, setPostcodeArea }) {
   }, [input]);
 
   return (
-    <form style={{ gridArea: "search" }}>
+    <form>
       <label htmlFor="postcode">Area postcode (e.g. 'SE25'):</label>
       <input
         type="text"
