@@ -8,7 +8,7 @@ function DataView() {
 
   return (
     <>
-      <div className="container">
+      <div className="flex p-10 flex-wrap">
         <div style={{ flex: "auto" }}>
           <PostcodeSearch
             postcodeArea={postcodeArea}

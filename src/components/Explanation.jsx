@@ -1,7 +1,9 @@
+import H2 from "./styling/H2";
+
 function Explanation() {
   return (
     <div id="explanation">
-      <h2>What is this?</h2>
+      <H2>What is this?</H2>
       <p>
         This is the carbon intensity of the electricity generated for your
         postcode. If more coal is being burned, the number goes up. If more wind

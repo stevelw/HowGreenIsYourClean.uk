@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { fetchNextFourHours } from "../utils/api";
+import H2 from "./styling/H2";
+import TH from "./styling/TH";
+import TD from "./styling/TD";
 
 function DayView({ postcodeArea }) {
   const [dayData, setDayData] = useState({});
@@ -18,28 +21,28 @@ function DayView({ postcodeArea }) {
 
   return (
     <div id="day-view">
-      <h2>The next 4 hours</h2>
+      <H2>The next 4 hours</H2>
       <table>
         <thead>
           <tr>
-            <th></th>
-            <th>
+            <TH />
+            <TH>
               Grams of CO<sub>2</sub> released per kilowatt-hour generated
-            </th>
+            </TH>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Average</td>
-            <td>{isLoading ? "Loading..." : dayData.average}</td>
+            <TD>Average</TD>
+            <TD>{isLoading ? "Loading..." : dayData.average}</TD>
           </tr>
           <tr>
-            <td>Min &ndash; Max</td>
-            <td>
+            <TD>Min &ndash; Max</TD>
+            <TD>
               {isLoading || !Object.keys(dayData).length
                 ? ""
                 : `${dayData.min} - ${dayData.max}`}
-            </td>
+            </TD>
           </tr>
         </tbody>
       </table>

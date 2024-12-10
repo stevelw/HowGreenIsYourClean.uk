@@ -14,11 +14,14 @@ function PostcodeSearch({ postcodeArea, setPostcodeArea }) {
   }, [input]);
 
   return (
-    <form>
-      <label htmlFor="postcode">Area postcode (e.g. 'SE25'):</label>
+    <form className="flex flex-col justify-evenly text-center align-middle">
+      <label htmlFor="postcode" className="m-5 text-xl">
+        Area postcode (e.g. 'SE25'):
+      </label>
       <input
         type="text"
         id="postcode"
+        className="m-5 text-xl w-20 bg-green-500 text-white p-5 rounded-2xl border-none"
         value={input}
         onChange={(event) => setInput(event.target.value)}
       ></input>

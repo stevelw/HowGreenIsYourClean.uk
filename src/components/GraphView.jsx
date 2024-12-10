@@ -12,6 +12,7 @@ import {
 import { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { fetchNextFortyEightHours } from "../utils/api";
+import H2 from "./styling/H2";
 
 function GraphView({ postcodeArea }) {
   const options = {
@@ -73,7 +74,7 @@ function GraphView({ postcodeArea }) {
 
   return (
     <div id="graph-view">
-      <h2>The next 48 hours</h2>
+      <H2>The next 48 hours</H2>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
