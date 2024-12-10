@@ -73,12 +73,12 @@ function GraphView({ postcodeArea }) {
   }, [postcodeArea]);
 
   return (
-    <div id="graph-view">
+    <div id="graph-view" className="mt-1">
       <H2>The next 48 hours</H2>
       {isLoading ? (
-        <p>Loading...</p>
+        <p className="text-center">Loading...</p>
       ) : (
-        <div style={{ width: "90%", padding: "0 auto" }}>
+        <div className="w-10/12 min-w-80 p-0 m-auto">
           <Line options={options} data={chartData} />
         </div>
       )}

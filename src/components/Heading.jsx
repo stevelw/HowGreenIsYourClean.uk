@@ -2,14 +2,13 @@ import logo from "../assets/logo.png";
 
 function Heading() {
   return (
-    <header className="flex justify-between">
+    <header className="flex justify-between m-1 sm:m-7 lg:m-10">
       <img
         src={logo}
         alt="icon of a grren-energy styled washing machine"
-        width="100"
-        height="100"
+        className="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-40 xl:h-40"
       />
-      <h1 className="px-10 py-0 m-0">
+      <h1 className="p-0 m-4 text-2xl sm:text-4xl lg:text-6xl xl:text-7xl">
         How <span className="text-green-500">Green</span> Is Your Clean?
       </h1>
     </header>

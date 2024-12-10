@@ -2,9 +2,9 @@ import H2 from "./styling/H2";
 
 function Explanation() {
   return (
-    <div id="explanation">
+    <div id="explanation" className="m-5 sm:m-20 md:mx-auto max-w-2xl">
       <H2>What is this?</H2>
-      <p>
+      <p className="sm:mt-4">
         This is the carbon intensity of the electricity generated for your
         postcode. If more coal is being burned, the number goes up. If more wind
         turbines are spinning, the number goes down. The values are per kWh
