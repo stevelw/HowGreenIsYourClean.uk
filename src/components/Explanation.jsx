@@ -19,16 +19,26 @@ function Explanation() {
       <footer>
         <p>
           Datasource:{" "}
-          <a href="https://api.carbonintensity.org.uk">
+          <a
+            href="https://api.carbonintensity.org.uk"
+            className="text-green-500"
+          >
             Official Carbon Intensity API for Great Britain
           </a>{" "}
-          developed by National Energy System Operator (NESO). You can find out
-          more about carbon intensity at{" "}
-          <a href="https://carbonintensity.org.uk">carbonintensity.org.uk</a>
+          developed by <em>National Energy System Operator</em> (<em>NESO</em>).
+          You can find out more about carbon intensity at{" "}
+          <a href="https://carbonintensity.org.uk" className="text-green-500">
+            carbonintensity.org.uk
+          </a>
         </p>
         <p>
           Data license:{" "}
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/"
+            className="text-green-500"
+          >
+            CC-BY-4.0
+          </a>
         </p>
       </footer>
     </div>
