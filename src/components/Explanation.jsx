@@ -16,7 +16,7 @@ function Explanation() {
         utilities such as washing machines, tumble driers, and dishwashers. The
         values for today cover a forecast for the next 4 hours.
       </p>
-      <footer>
+      <aside>
         <p>
           Datasource:{" "}
           <a href="https://api.carbonintensity.org.uk">
@@ -30,7 +30,7 @@ function Explanation() {
           Data license:{" "}
           <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
         </p>
-      </footer>
+      </aside>
     </div>
   );
 }
