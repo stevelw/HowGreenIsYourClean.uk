@@ -8,7 +8,7 @@ function Explanation() {
         This is the carbon intensity of the electricity generated for your
         postcode. If more coal is being burned, the number goes up. If more wind
         turbines are spinning, the number goes down. The values are per kWh
-        generated, so this isn't a measure of how much energy is being
+        generated, so this isn&apos;t a measure of how much energy is being
         generated, but how clean that energy is.
       </p>
       <p>
