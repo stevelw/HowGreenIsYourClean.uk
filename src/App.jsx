@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <Heading />
-      <DataView />
-      <Explanation />
+      <main id="main">
+        <DataView />
+        <Explanation />
+      </main>
     </>
   );
 }
