@@ -89,9 +89,9 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/planning\/plan.html",
-      "oF" : 0,
+      "oF" : 1,
       "oFM" : 0,
       "oS" : 0,
       "pHT" : 0,
@@ -102,9 +102,9 @@
     "\/planning\/wireframe.png" : {
       "ft" : 32768,
       "iS" : 86609,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/planning\/wireframe.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -345,7 +345,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 759430265.97883904
+    "lastBuiltDate" : 760357109.40836298
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
