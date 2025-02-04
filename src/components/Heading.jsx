@@ -3,6 +3,9 @@ import logo from "../assets/logo.png";
 function Heading() {
   return (
     <header className="flex justify-between m-1 sm:m-7 lg:m-10">
+      <a href="#main" className="skip-to-content-link">
+        Skip to main content
+      </a>
       <img
         src={logo}
         alt="icon of a grren-energy styled washing machine"
