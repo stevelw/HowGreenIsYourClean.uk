@@ -2,7 +2,15 @@
   "AAInfo" : "This is a CodeKit 3 project config file. EDITING THIS FILE IS A POOR LIFE DECISION. Doing so may cause CodeKit to crash and\/or corrupt your project. Several critical values in this file are 64-bit integers, which JavaScript JSON parsers do not support because JavaScript cannot handle 64-bit integers. These values will be corrupted if the file is parsed with JavaScript. This file is not backwards-compatible with CodeKit 1 or 2. For details, see https:\/\/codekitapp.com\/",
   "buildSteps" : [
     {
-      "name" : "New \"Run Script\" Step",
+      "itemsToProcess" : [
+        "\/original assets\/logo.png"
+      ],
+      "name" : "Pre-process files",
+      "stepType" : 0,
+      "uuidString" : "ABFF660D-165D-48A3-B234-A06A0E95C00C"
+    },
+    {
+      "name" : "Compile with Vite",
       "scriptSourceString" : "\/Users\/steve\/.nvm\/versions\/node\/v22.3.0\/bin\/npm run build",
       "scriptType" : 2,
       "scriptUUIDString" : "83CA0BF8-3F60-4D93-8B41-0756B400BCAA",
@@ -63,6 +71,19 @@
       "oA" : 2,
       "oAP" : "\/dist\/node_modules",
       "oF" : 0
+    },
+    "\/original assets\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 451474,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/logo.png",
+      "oF" : 2,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-drawing",
+      "q" : 90,
+      "rq" : 75
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -180,15 +201,26 @@
     },
     "\/src\/assets\/logo.png" : {
       "ft" : 32768,
-      "iS" : 451474,
-      "oA" : 1,
+      "iS" : 147907,
+      "oA" : 0,
       "oAP" : "\/dist\/src\/assets\/logo.png",
-      "oF" : 1,
+      "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/src\/assets\/logo.webp" : {
+      "ft" : 8388608,
+      "iS" : 29994,
+      "oA" : 0,
+      "oAP" : "\/dist\/src\/assets\/logo.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/src\/components\/DataView.jsx" : {
