@@ -21,10 +21,24 @@
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
       "uuidString" : "5E7F8956-3675-45A5-9541-B2E7E557C9D6"
+    },
+    {
+      "name" : "Deploy to server",
+      "scriptSourceString" : "rsync -av --delete \/Users\/steve\/repos\/HowGreenIsYourClean.uk\/dist\/ steve@h-web-server:\/var\/www\/howgreenisyourclean.stevelw.co.uk\/",
+      "scriptType" : 1,
+      "scriptUUIDString" : "F2028EA8-5C18-47A6-B7BE-2C872CFD0D4B",
+      "stepType" : 2,
+      "uuidString" : "93667102-43F9-4830-8DD8-E4F5F6C250A7"
     }
   ],
   "creatorBuild" : "34680",
   "files" : {
+    "\/.github" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/dist\/.github",
+      "oF" : 0
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -76,7 +90,7 @@
       "ft" : 32768,
       "iS" : 451474,
       "oA" : 0,
-      "oAP" : "\/src\/assets\/logo.png",
+      "oAP" : "\/dist\/assets\/logo.png",
       "oF" : 2,
       "oIPL" : 0,
       "opt" : 1,
@@ -171,7 +185,7 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/App-min.css",
+      "oAP" : "\/dist\/App-min.css",
       "oF" : 1,
       "pg" : 0
     },
@@ -181,7 +195,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/App-min.js",
+      "oAP" : "\/dist\/App-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -203,10 +217,10 @@
       "ft" : 32768,
       "iS" : 147907,
       "oA" : 0,
-      "oAP" : "\/dist\/src\/assets\/logo.png",
+      "oAP" : "\/dist\/assets\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
@@ -216,10 +230,10 @@
       "ft" : 8388608,
       "iS" : 29994,
       "oA" : 0,
-      "oAP" : "\/dist\/src\/assets\/logo.webp",
+      "oAP" : "\/dist\/assets\/logo.webp",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
@@ -229,7 +243,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/components\/DataView-min.js",
+      "oAP" : "\/dist\/components\/DataView-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -240,7 +254,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/components\/DayView-min.js",
+      "oAP" : "\/dist\/components\/DayView-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -251,7 +265,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/components\/Explanation-min.js",
+      "oAP" : "\/dist\/components\/Explanation-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -262,7 +276,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/components\/GraphView-min.js",
+      "oAP" : "\/dist\/components\/GraphView-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -273,7 +287,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/components\/Heading-min.js",
+      "oAP" : "\/dist\/components\/Heading-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -284,7 +298,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/components\/PostcodeSearch-min.js",
+      "oAP" : "\/dist\/components\/PostcodeSearch-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -295,7 +309,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/components\/styling\/H2-min.js",
+      "oAP" : "\/dist\/components\/styling\/H2-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -316,7 +330,7 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/index-min.css",
+      "oAP" : "\/dist\/index-min.css",
       "oF" : 1,
       "pg" : 0
     },
@@ -326,7 +340,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/main-min.js",
+      "oAP" : "\/dist\/main-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -337,7 +351,7 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/dist\/src\/utils\/api-min.js",
+      "oAP" : "\/dist\/utils\/api-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
@@ -374,10 +388,10 @@
   "projectAttributes" : {
     "creationDate" : 751975127.55492795,
     "displayValue" : "HowGreenIsYourClean.uk",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "\/src\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 805561702.37037098
+    "lastBuiltDate" : 809451073.83571196
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1936,7 +1950,7 @@
     "rollupTreeshakingModuleSideEffects" : 1,
     "sassWarningStyle" : 1,
     "skippedFoldersString" : "\/.github,node_modules,logs,cache,\/storage\/framework\/sessions,_logs,log,.idea,_cache",
-    "sourceFolderName" : "source",
+    "sourceFolderName" : "src",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,
     "tsAllowImportingTSExtensions" : 0,
