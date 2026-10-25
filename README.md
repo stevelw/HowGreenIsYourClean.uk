@@ -2,7 +2,7 @@
 
 **A work in progress frontend for the [Official Carbon Intensity API for Great Britain](https://carbonintensity.org.uk)**
 
-Hosted at [howgreenisyourclean.uk](https://howgreenisyourclean.uk).
+Hosted at [howgreenisyourclean.stevelw.co.uk](https://howgreenisyourclean.stevelw.co.uk).
 
 I am in the middle of building this as a portfolio project while on the _[Northcoders](https://northcoders.com) JavaScript full-stack course_.
 
@@ -11,9 +11,9 @@ I am in the middle of building this as a portfolio project while on the _[Northc
 
 ## How to run and test locally
 
-A built version is available at [howgreenisyourclean.uk](https://howgreenisyourclean.uk). However, if you wish to build it yourself:
+A built version is available at [howgreenisyourclean.stevelw.co.uk](https://howgreenisyourclean.stevelw.co.uk). However, if you wish to build it yourself:
 
-1. Clone the repo from [github.com/stevelw/howgreenisyourclean.uk](https://github.com/stevelw/howgreenisyourclean.uk]
+1. Clone the repo from [github.com/stevelw/howgreenisyourclean.uk](https://github.com/stevelw/howgreenisyourclean.uk)
 
    `git clone https://github.com/stevelw/howgreenisyourclean.uk`
 
